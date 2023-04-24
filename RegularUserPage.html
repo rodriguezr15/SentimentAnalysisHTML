@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sentiment Analyzer Home Page</title>
+	<style> 
+		body {background-color: #91bad6;}
+		
+		h1 {
+			text-align: center;
+			padding-top: 5px;
+		}
+
+		p {
+			padding-top: 20px;
+			font-size: 20px;
+			text-align: center;			
+		}
+		
+		input[type=text]{
+			align-content: center;
+			width:50%;
+			border: 5px solid #aaa
+			border-radius: 5px;
+			margin: 10px 0;
+			outline: none;
+			padding: 20px;
+			font-size: 20px;
+		}
+		
+		input[type=submit]{
+			width: 15%;
+			font-size: 20px;
+		}
+		
+		input[type=image]{
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding-top: 10px;
+			padding-right: 10px;	
+		}
+		
+		#saved {
+			align-content: center;
+			width:50%;
+			height:300px;
+			border: 5px solid #aaa
+			border-radius: 5px;
+			margin: 10px 0;
+			outline: none;
+			padding: 20px;
+			font-size: 20px;		
+		}
+		
+		#login {
+			width: 15%;
+			font-size: 20px;
+		}
+	</style>
+</head>
+	
+<body> 
+	<h1>Welcome to Sentiment Analyzer!</h1>	<br>
+	<p>Type a sentence into the text box then click the "Classify Text" button.</p>
+	<center><input type="text" placeholder="Your sentence here..."><center> <br><br>
+	<input type="submit" value="Classify Text">
+	<p></p>	
+	<input type="image" img align="top" src="https://www.freecodecamp.org/news/content/images/2020/09/wall-5.jpeg" width="280" height="200">
+	<p>Sentiment Result:</p>
+	<center><input type="text" placeholder="Result..." disabled><center> <br><br>
+	<p>Saved sentiments:</p>
+	<center><input type="text" id= "saved" placeholder="Saved Sentiments..." disabled><center> <br><br>
+	<form action="LoginPage.html">        
+        <input type="submit" id= "login" value="Login as Admin">
+	<p></p>	
+    </form>
+</body>
+</html> 
